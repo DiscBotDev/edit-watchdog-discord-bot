@@ -7,7 +7,7 @@ Monitors edited messages and deletes them if they include a link.
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install Discord.py.
 
 ```bash
-pip install Discord.py
+python -m pip install -U discord.py
 ```
 
 ## Usage
