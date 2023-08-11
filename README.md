@@ -11,7 +11,7 @@ pip install Discord.py
 ```
 
 ## Usage
-1. Put your bots token in bot.py on line no. 10.
+1. Put your bots token in bot.py on Line # 10.
 2. Make sure the bot has the message contents intent enabled on the Discord Developer Portal.
 ```bash
 python bot.py
