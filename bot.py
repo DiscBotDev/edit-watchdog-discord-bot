@@ -26,7 +26,7 @@ class MyClient(discord.Client):
         message = await channel.fetch_message(payload.message_id)
         return message
 
-    async def on_raw_message_edit(self, payload):  # Using on_raw_message_edit instead of raw_message_edit since this can deal with older messages not in internal cache and we aren't concerned with message contents prior to the edit.
+    async def on_raw_message_edit(self, payload):  # Using on_raw_message_edit instead of on_message_edit since this can deal with older messages not in internal cache and we aren't concerned with message contents prior to the edit.
         new_message = payload.data
         new_message_content = new_message.get("content","")
         if(contains_link(new_message_content)):
